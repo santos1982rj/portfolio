@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+svg,
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+@import 'partials/unit';
+@import 'partials/colors';
+@import 'partials/layout';
+@import 'partials/typography';
+@import 'partials/spacing';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  scroll-behavior: smooth;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+@import 'partials/l-header';
+@import 'partials/l-hero';
+
+@import 'partials/buttons';
