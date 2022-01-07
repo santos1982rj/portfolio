@@ -777,6 +777,15 @@ body {
   gap: 2.5rem;
 }
 
+@media screen and (max-width: 960px) {
+  .l-hero__box {
+    padding: 16px 25px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
 .l-hero__card {
   background-color: #353543;
 }

@@ -51,6 +51,9 @@ $component-name: 'l-hero';
     gap: rem(40);
 
     @include responsive(sm) {
+      padding: 16px 25px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
     }
   }
 
