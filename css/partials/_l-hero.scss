@@ -1,7 +1,7 @@
 $component-name: 'l-hero';
 
 .#{$component-name} {
-  background: linear-gradient($gray-300 87%, $gray-500 10%);
+  background: linear-gradient($gray-300 90%, $gray-500 10%);
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,6 +17,26 @@ $component-name: 'l-hero';
   &__info {
     h1 {
       margin-bottom: rem(32);
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 4ch;
+        height: 5px;
+        animation: mymove 2s;
+        background-color: $primary-color;
+        margin-top: 1rem;
+      }
+      @keyframes mymove {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 4ch;
+        }
+      }
     }
     span {
       font-size: rem(64);

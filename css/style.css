@@ -710,8 +710,8 @@ body {
 }
 
 .l-hero {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(87%, #353543), color-stop(10%, #282833));
-  background: linear-gradient(#353543 87%, #282833 10%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #353543), color-stop(10%, #282833));
+  background: linear-gradient(#353543 90%, #282833 10%);
 }
 
 .l-hero .container {
@@ -734,6 +734,37 @@ body {
 
 .l-hero__info h1 {
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.l-hero__info h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4ch;
+  height: 5px;
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
+  background-color: #ffba1a;
+  margin-top: 1rem;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 4ch;
+  }
+}
+
+@keyframes mymove {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 4ch;
+  }
 }
 
 .l-hero__info span {
