@@ -41,9 +41,9 @@ let time4 = setInterval(() => {
   }
 }, 250);
 
-// Button Menu Mobile Animation
+// // Button Menu Mobile Animation
 
-const menu = document.getElementById('menu');
-menu.onclick = () => {
-  menu.classList.toggle('active');
-};
+// const menu = document.getElementById('menu');
+// menu.onclick = () => {
+//   menu.classList.toggle('active');
+// };
