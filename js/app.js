@@ -40,3 +40,10 @@ let time4 = setInterval(() => {
     clearInterval(time4);
   }
 }, 250);
+
+// Button Menu Mobile Animation
+
+const menu = document.getElementById('menu');
+menu.onclick = () => {
+  menu.classList.toggle('active');
+};

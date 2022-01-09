@@ -83,7 +83,7 @@ h1 {
   color: $white-50;
   @include typeface-1(h1, desktop);
 
-  @include responsive(sm) {
+  @include responsive(xs) {
     @include typeface-1(h1, mobile);
   }
 }
@@ -92,7 +92,7 @@ h2 {
   color: $white-50;
   @include typeface-1(h2, desktop);
 
-  @include responsive(sm) {
+  @include responsive(xs) {
     @include typeface-1(h2, mobile);
   }
 }
@@ -101,7 +101,7 @@ h3 {
   color: $white-100;
   @include typeface-1(h3, desktop);
 
-  @include responsive(sm) {
+  @include responsive(xs) {
     @include typeface-1(h3, mobile);
   }
 }
@@ -127,7 +127,7 @@ p {
   color: $white-300;
 
   @include typeface-2(p2, desktop);
-  @include responsive(sm) {
+  @include responsive(xs) {
     @include typeface-2(p2, mobile);
   }
 }

@@ -8,7 +8,7 @@ $component-name: 'l-hero';
     gap: 40px 0;
     place-items: center;
 
-    @include responsive(sm) {
+    @include responsive(xs) {
       display: grid;
       grid-template-columns: 1fr;
     }
@@ -46,7 +46,7 @@ $component-name: 'l-hero';
     p {
       max-inline-size: rem(450px);
     }
-    @include responsive(sm) {
+    @include responsive(xs) {
       grid-column: 1 / -1;
     }
   }
@@ -54,7 +54,7 @@ $component-name: 'l-hero';
   &__img {
     width: 100%;
 
-    @include responsive(sm) {
+    @include responsive(xs) {
       grid-column: 1 / -1;
       text-align: center;
     }
@@ -69,8 +69,12 @@ $component-name: 'l-hero';
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
     gap: rem(40);
-
     @include responsive(sm) {
+      padding: 16px 25px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    @include responsive(xs) {
       padding: 16px 25px;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
